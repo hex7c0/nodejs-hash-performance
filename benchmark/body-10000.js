@@ -19,20 +19,21 @@ var suite = new benchmark.Suite
 var encoding = [ 'hex', 'binary', 'base64' ];
 var hashes = require('crypto').getHashes();
 for (var i = 0, ii = hashes.length; i < ii; i++) {
-    for (var j = 0, jj = encoding.length; j < jj; j++) {
-        suite.add({
-            name: ' string-' + encoding[j] + '-' + hashes[i],
-            minSamples: 50,
-            fn: 'var val = hash(string, "' + hashes[i] + '", "' + encoding[j]
-                    + '")'
-        });
-        suite.add({
-            name: ' buffer-' + encoding[j] + '-' + hashes[i],
-            minSamples: 50,
-            fn: 'var val = hash(buffer, "' + hashes[i] + '", "' + encoding[j]
-                    + '")'
-        });
-    }
+    var j = 2;
+    // for (var j = 0, jj = encoding.length; j < jj; j++) {
+    // suite.add({
+    // name: ' string-' + encoding[j] + '-' + hashes[i],
+    // minSamples: 50,
+    // fn: 'var val = hash(string, "' + hashes[i] + '", "' + encoding[j]
+    // + '")'
+    // });
+    suite.add({
+        name: ' buffer-' + encoding[j] + '-' + hashes[i],
+        minSamples: 50,
+        fn: 'var val = hash(buffer, "' + hashes[i] + '", "' + encoding[j]
+                + '")'
+    });
+    // }
 }
 
 suite.on('start', function onCycle(event) {
