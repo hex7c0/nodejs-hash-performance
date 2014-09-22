@@ -1,47 +1,33 @@
-# [REPLACE](http://supergiovane.tk/#/REPLACE)
+# node-hash-performance
 
-[![NPM version](https://badge.fury.io/js/REPLACE.svg)](http://badge.fury.io/js/REPLACE)
-[![Build Status](https://travis-ci.org/hex7c0/REPLACE.svg)](https://travis-ci.org/hex7c0/REPLACE)
-[![Dependency Status](https://david-dm.org/hex7c0/REPLACE/status.svg)](https://david-dm.org/hex7c0/REPLACE)
+Benchmark for all node `getHashes`
 
-Descrizione
+[Travis Benchmark](https://travis-ci.org/hex7c0/hash-performance/)
 
 ## Installation
 
 Install through NPM
 
 ```bash
-npm install REPLACE
+npm install node-hash-performance
 ```
 or
 ```bash
-git clone git://github.com/hex7c0/REPLACE.git
+git clone git://github.com/hex7c0/node-hash-performance.git
 ```
 
 ## API
 
-inside expressjs project
+inside nodejs project
 ```js
-var REPLACE = require('REPLACE');
+var hash = require('node-hash-performance');
 ```
 
-### REPLACE(options)
+### node-hash-performance(raw,hash)
 
 #### options
 
- - `exclude` - **RegExp** Scrivi *(default "disabled")*
- - `dotfiles`- **Boolean** Scrivi *(default "disabled")*
- - `date` - **Boolean** Scrivi *(default "disabled")*
- - `size` - **Boolean** Scrivi *(default "disabled")*
- - `priority` - **Boolean** Scrivi *(default "disabled")*
- - `cache` - **Boolean** Scrivi *(default "disabled")*
- - `strictMethod` - **Boolean** Scrivi *(default "disabled")*
- - `sync` - **Boolean** Scrivi *(default "disabled")*
- - `json` - **Boolean** Scrivi *(default "disabled")*
- - `static` - **Object | false** Scrivi *(default "disabled")*
-
-## Examples
-
-Take a look at my [examples](https://github.com/hex7c0/REPLACE/tree/master/examples)
+ - `raw` - **String | Buffer** Your Data *(default "required")*
+ - `hash`- **Boolean** Type of Hash *(default "required")*
 
 ### [License GPLv3](http://opensource.org/licenses/GPL-3.0)
