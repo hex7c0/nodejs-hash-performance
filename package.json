@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "name": "hash-performance",
+  "description": "descrizione",
+  "keywords": [
+    "hash",
+    "performance"
+  ],
+  "preferGlobal": false,
+  "homepage": "http://supergiovane.tk/#/hash-performance",
+  "author": {
+    "name": "hex7c0",
+    "email": "hex7c0@gmail.com",
+    "url": "http://hex7c0.tk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hex7c0/hash-performance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hex7c0/hash-performance/issues",
+    "email": "hex7c0@gmail.com"
+  },
+  "directories":{
+    "doc":"./doc"
+  },
+  "main": "index.min.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "benchmark": "1.0.0",
+    "beautify-benchmark": "0.2.4",
+    "seedrandom": "~2.3.6"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "node benchmark/index.js"
+  },
+  "license": "GPLv3"
+}
