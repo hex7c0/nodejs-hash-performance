@@ -1,6 +1,6 @@
 # node-hash-performance
 
-Benchmark for node `getHashes`
+Benchmarks for node `crypto.getHashes()`
 
 [Travis Benchmark](https://travis-ci.org/hex7c0/hash-performance/)
 
@@ -21,6 +21,8 @@ git clone git://github.com/hex7c0/node-hash-performance.git
 inside nodejs project
 ```js
 var hash = require('node-hash-performance');
+
+hash('ciao', 'md5', 'base64');
 ```
 
 ### node-hash-performance(raw,hash,encoding)

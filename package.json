@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
-  "name": "hash-performance",
-  "description": "descrizione",
+  "name": "node-hash-performance",
+  "description": "benchmarks for node `crypto.getHashes()`",
   "keywords": [
     "hash",
     "performance"
@@ -28,8 +28,8 @@
   "dependencies": {
   },
   "devDependencies": {
-    "benchmark": "1.0.0",
-    "beautify-benchmark": "0.2.4",
+    "benchmark": "~1.0.0",
+    "beautify-benchmark": "~0.2.4",
     "seedrandom": "~2.3.6"
   },
   "engines": {
