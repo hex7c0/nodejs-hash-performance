@@ -31,17 +31,6 @@ for (var i = 0, ii = hashes.length; i < ii; i++) {
 
 }
 
-suite.on('cycle', function onCycle(event) {
-
-    benchmarks.add(event.target);
-})
-
-suite.on('complete', function onComplete() {
-
-    benchmarks.log();
-    console.log('Fastest is ' + this.filter('fastest').pluck('name'));
-})
-
 suite.on('start', function onCycle(event) {
 
     process.stdout.write('  100KB body\n\n')
@@ -55,6 +44,7 @@ suite.on('cycle', function onCycle(event) {
 suite.on('complete', function onComplete() {
 
     benchmarks.log();
+    console.log('Fastest is ' + this.filter('fastest').pluck('name'));
 })
 
 suite.run({

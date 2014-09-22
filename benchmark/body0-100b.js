@@ -31,6 +31,11 @@ for (var i = 0, ii = hashes.length; i < ii; i++) {
 
 }
 
+suite.on('start', function onCycle(event) {
+
+    process.stdout.write('  100B body\n\n')
+})
+
 suite.on('cycle', function onCycle(event) {
 
     benchmarks.add(event.target);
