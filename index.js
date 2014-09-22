@@ -1,10 +1,10 @@
 "use strict";
 /**
- * @file hash-performance main
- * @module hash-performance
- * @package hash-performance
+ * @file nodejs-hash-performance main
+ * @module nodejs-hash-performance
+ * @package nodejs-hash-performance
  * @subpackage main
- * @version 0.0.3
+ * @version 0.0.4
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3
@@ -27,14 +27,14 @@ try {
 /**
  * main
  * 
- * @exports hash
- * @function hash
+ * @exports hashes
+ * @function hashes
  * @param {String|Buffer} raw - Check README.md
  * @param {String} hash - Check README.md
  * @param {String} encoding - Check README.md
  * @return {Object}
  */
-module.exports = function hash(raw, hash, encoding) {
+module.exports = function hashes(raw, hash, encoding) {
 
     return crypto.createHash(hash).update(raw).digest(encoding);
 };
