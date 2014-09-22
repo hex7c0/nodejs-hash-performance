@@ -1,8 +1,8 @@
-# node-hash-performance
+# nodejs-hash-performance
 
 Benchmarks for node `crypto.getHashes()`
 
-[Travis Benchmark](https://travis-ci.org/hex7c0/node-hash-performance/)
+[Travis Benchmark](https://travis-ci.org/hex7c0/nodejs-hash-performance/)
 
 ## Installation
 

@@ -1,13 +1,13 @@
 {
   "version": "0.0.1",
-  "name": "node-hash-performance",
+  "name": "nodejs-hash-performance",
   "description": "benchmarks for node `crypto.getHashes()`",
   "keywords": [
     "hash",
     "performance"
   ],
   "preferGlobal": false,
-  "homepage": "http://supergiovane.tk/#/hash-performance",
+  "homepage": "http://supergiovane.tk/#/nodejs-hash-performance",
   "author": {
     "name": "hex7c0",
     "email": "hex7c0@gmail.com",
@@ -15,16 +15,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hex7c0/hash-performance.git"
+    "url": "https://github.com/hex7c0/nodejs-hash-performance.git"
   },
   "bugs": {
-    "url": "https://github.com/hex7c0/hash-performance/issues",
+    "url": "https://github.com/hex7c0/nodejs-hash-performance/issues",
     "email": "hex7c0@gmail.com"
   },
-  "directories":{
-    "doc":"./doc"
-  },
-  "main": "index.min.js",
+  "main": "index.js",
   "dependencies": {
   },
   "devDependencies": {
