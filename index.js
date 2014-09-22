@@ -24,6 +24,15 @@ try {
 /*
  * functions
  */
+/**
+ * main
+ * 
+ * @exports hash
+ * @function hash
+ * @param {String|Buffer} raw - Check README.md
+ * @param {String} hash - Check README.md
+ * @return {Object}
+ */
 module.exports = function hash(raw, hash) {
 
     return crypto.createHash(hash).update(raw).digest('base64');
