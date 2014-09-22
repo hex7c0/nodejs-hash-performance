@@ -29,7 +29,7 @@ for (var i = 0, ii = hashes.length; i < ii; i++) {
         suite.add({
             name: ' buffer-' + encoding[j] + '-' + hashes[i],
             minSamples: 50,
-            fn: 'var val = hash(string, "' + hashes[i] + '", "' + encoding[j]
+            fn: 'var val = hash(buffer, "' + hashes[i] + '", "' + encoding[j]
                     + '")'
         });
     }
