@@ -4,7 +4,7 @@
  * @module hash-performance
  * @package hash-performance
  * @subpackage main
- * @version 0.0.1
+ * @version 0.0.2
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3

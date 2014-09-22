@@ -10,9 +10,9 @@ var seedrandom = require('seedrandom')
  * Globals for benchmark.js
  */
 
-global.buffer = getbuffer(1 * 1000)
+global.buffer = getbuffer(10000)
 global.hash = require('..')
-global.string = getbuffer(1 * 1000).toString()
+global.string = getbuffer(10000).toString()
 
 var suite = new benchmark.Suite
 
@@ -37,7 +37,7 @@ for (var i = 0, ii = hashes.length; i < ii; i++) {
 
 suite.on('start', function onCycle(event) {
 
-    process.stdout.write('  1KB body\n\n')
+    process.stdout.write('  10000 body\n\n')
 })
 
 suite.on('cycle', function onCycle(event) {
