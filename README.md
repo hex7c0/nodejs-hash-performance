@@ -1,6 +1,6 @@
 # node-hash-performance
 
-Benchmark for all node `getHashes`
+Benchmark for node `getHashes`
 
 [Travis Benchmark](https://travis-ci.org/hex7c0/hash-performance/)
 

@@ -10,9 +10,9 @@ var seedrandom = require('seedrandom')
  * Globals for benchmark.js
  */
 
-global.buffer = getbuffer(100 * 1000)
+global.buffer = getbuffer(50 * 1000)
 global.hash = require('..')
-global.string = getbuffer(100 * 1000).toString()
+global.string = getbuffer(50 * 1000).toString()
 
 var suite = new benchmark.Suite
 
@@ -20,12 +20,12 @@ var hashes = require('crypto').getHashes();
 for (var i = 0, ii = hashes.length; i < ii; i++) {
     suite.add({
         name: 'string - ' + hashes[i],
-        minSamples: 100,
+        minSamples: 50,
         fn: 'var val = hash(string, "' + hashes[i] + '")'
     });
     suite.add({
         name: 'buffer - ' + hashes[i],
-        minSamples: 100,
+        minSamples: 50,
         fn: 'var val = hash(buffer, "' + hashes[i] + '")'
     });
 
@@ -44,7 +44,7 @@ suite.on('cycle', function onCycle(event) {
 suite.on('complete', function onComplete() {
 
     benchmarks.log();
-    console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+    console.log('Fastest is: ' + this.filter('fastest').pluck('name') + '\n');
 })
 
 suite.run({
