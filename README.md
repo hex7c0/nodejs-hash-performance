@@ -23,11 +23,12 @@ inside nodejs project
 var hash = require('node-hash-performance');
 ```
 
-### node-hash-performance(raw,hash)
+### node-hash-performance(raw,hash,encoding)
 
 #### options
 
  - `raw` - **String | Buffer** Your Data *(default "required")*
- - `hash`- **Boolean** Type of Hash *(default "required")*
+ - `hash`- **String** Type of Hash *(default "required")*
+ - `encoding`- **String** Type of Encoding *(default "required")*
 
 ### [License GPLv3](http://opensource.org/licenses/GPL-3.0)

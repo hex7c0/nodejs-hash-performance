@@ -31,9 +31,10 @@ try {
  * @function hash
  * @param {String|Buffer} raw - Check README.md
  * @param {String} hash - Check README.md
+ * @param {String} encoding - Check README.md
  * @return {Object}
  */
-module.exports = function hash(raw, hash) {
+module.exports = function hash(raw, hash, encoding) {
 
-    return crypto.createHash(hash).update(raw).digest('base64');
+    return crypto.createHash(hash).update(raw).digest(encoding);
 };
