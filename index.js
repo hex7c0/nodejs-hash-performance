@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /**
  * @file nodejs-hash-performance main
  * @module nodejs-hash-performance
