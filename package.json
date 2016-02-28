@@ -1,5 +1,5 @@
 {
-  "version": "0.0.9",
+  "version": "0.0.10",
   "name": "nodejs-hash-performance",
   "description": "benchmarks for node `crypto.getHashes()` or just a wrapper for hash function",
   "keywords": [
@@ -8,7 +8,7 @@
     "benchmark"
   ],
   "preferGlobal": false,
-  "homepage": "http://supergiovane.tk/#/nodejs-hash-performance",
+  "homepage": "https://github.com/hex7c0/nodejs-hash-performance",
   "author": {
     "name": "hex7c0",
     "email": "hex7c0@gmail.com",
