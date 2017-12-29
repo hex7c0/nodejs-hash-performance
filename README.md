@@ -23,7 +23,7 @@ var hash = require('nodejs-hash-performance');
 hash('ciao', 'md5', 'base64');
 ```
 
-### nodejs-hash-performance(raw,hash,encoding)
+### nodejs-hash-performance(raw, hash, encoding)
 
 #### options
 
